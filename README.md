@@ -1,1 +1,1 @@
-# spin-and-learn
+# Spin-and-learn
