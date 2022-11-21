@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import "./App.css";
 import logo from './images/logoImg.png';
 import HomePage from "./pages/HomePage";
-import AboutUsPage from "./pages/AboutUsPage";
+import AboutPage from "./pages/AboutPage";
 import PricingPage from "./pages/PricingPage";
 import TeamPage from "./pages/TeamPage";
 import SignUpPage from "./pages/SignUpPage";
@@ -71,7 +71,7 @@ function App() {
         <div className="justify-content-start">
           <Routes>
             <Route path="/homepage" element={<HomePage />} />
-            <Route path="/about-us" element={<AboutUsPage />} />
+            <Route path="/about-us" element={<AboutPage />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/sign-up" element={<SignUpPage />} />
