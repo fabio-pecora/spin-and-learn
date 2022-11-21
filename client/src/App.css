@@ -44,7 +44,7 @@ body{
     color: #FFFFFF;
     font-weight: 700;
     font-size: 50%;
-    position: fixed;
+    position: absolute;
     top: -25%;
     left: 5%;
 } 
