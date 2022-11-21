@@ -1,1 +1,58 @@
-/* Add custom CSS here */
+body{
+    background-color: #A53030;   
+}
+#theNav{
+    margin-top: 0%;
+    background-color: #BFBFBF;
+}
+#theLogo{
+    height: 60px;
+    width: 120px;
+}
+.whiteTextBold{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.whiteTextBold:hover, .whiteTextBold:focus{
+    color: #FFFFFF;
+}
+.whiteText{
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 15px;
+    margin-right: 60px;
+    color: #FFFFFF !important;
+}
+#theSignUp{
+    font-size: 30px;
+    margin-top: -15px;
+    font-weight: 600;
+    color: #4F8FBA;
+}
+#theLogin{
+    font-size: 30px;
+    margin-top: 7.5px;
+    font-weight: 600;
+    color: #A53030;
+}
+#theHomepageImg{
+    height: 45vh;
+    width: 100vw;
+}
+#textOnImg{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 50%;
+    position: fixed;
+    top: -25%;
+    left: 5%;
+} 
+#contactUs{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
