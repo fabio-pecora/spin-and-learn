@@ -4,7 +4,6 @@ function LoginPage(props) {
     return (
         <>
             <div id="graySide">
-                
             </div>
             <div id="redSide">
                 <div id="loginDiv1">

@@ -3,36 +3,65 @@ import React from 'react';
 function TeamPage(props) {
     return (
         <>
-            <div>
-                <p>team page content</p>
+            
+            <div id="teamDiv1">
+                <p>The Team</p>
             </div>
-            <h2 className="mb-3">The Team</h2>
-            <div className="row">
-                <div className="col-lg-4">
-                    <h3>Firstname Lastname</h3>
-                        <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Dignissimos in itaque nihil consectetur qui natus similique
-                        nostrum molestias, ipsa explicabo hic impedit aspernatur. Ipsa
-                        provident neque culpa alias incidunt amet.
-                        </p>
-                    </div>
-                <div className="col-lg-4">
-                    <h3>Firstname Lastname</h3>
+            <div className="row" id="teamDiv2">
+                <div className="developer col-lg-3">
                     <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dignissimos in itaque nihil consectetur qui natus similique
-                    nostrum molestias, ipsa explicabo hic impedit aspernatur. Ipsa
-                    provident neque culpa alias incidunt amet.
+                        Ahmai 
+                        <br></br>
+                        Chaney-Smith
+                    </p>
+                    <p>
+                        Brooklyn College
+                        <br></br>
+                        Front-End Developer
+                        <br></br>
+                        GitHub: arc-Smith
                     </p>
                 </div>
-                <div className="col-lg-4">
-                    <h3>Firstname Lastname</h3>
+                <div className="developer col-lg-3">
                     <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Dignissimos in itaque nihil consectetur qui natus similique
-                    nostrum molestias, ipsa explicabo hic impedit aspernatur. Ipsa
-                    provident neque culpa alias incidunt amet.
+                        Fabio 
+                        <br></br>
+                        Pecora
+                    </p>
+                    <p>
+                        College of Staten Island
+                        <br></br>
+                        Back-End Developer
+                        <br></br>
+                        GitHub: fabio-pecora
+                    </p>
+                </div>
+                <div className="developer col-lg-3">
+                    <p>
+                        Tahmina 
+                        <br></br>
+                        Munni
+                    </p>
+                    <p>
+                        Hunter College
+                        <br></br>
+                        Front-End Developer
+                        <br></br>
+                        GitHub: TahminaM
+                    </p>
+                </div>
+                <div className="developer col-lg-3">
+                    <p>
+                        Yasiris 
+                        <br></br>
+                        Ortiz
+                    </p>
+                    <p>
+                        The City College of New York
+                        <br></br>
+                        Back-End Developer
+                        <br></br>
+                        GitHub: yasirisortiz
                     </p>
                 </div>
             </div>
