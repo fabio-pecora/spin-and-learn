@@ -1,7 +1,31 @@
+/* BELOW FOR ALL PAGES */
 body{
     background-color: #A53030;  
     height: 1280px; 
 }
+#theFooter{
+    background-color: #BFBFBF;
+    width: 100%;
+    margin-top: 60px;
+}
+#theFooter p:nth-child(1){
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+#theFooter p:nth-child(2){
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 200;
+    margin: 0;
+    padding-top: 0;
+}
+/* ABOVE FOR ALL PAGES */
+
+/* BELOW FOR HOMEPAGE */
 #theDiv{
     position: sticky;
     top: 0;
@@ -45,11 +69,11 @@ body{
     color: #A53030;
 }
 /* div for the image on homepage */
-#div1{
+#homepageDiv1{
     position: relative;
 }
 /* div for the text over the image on homepage */
-#div2{
+#homepageDiv2{
     position: absolute;
     top: 180px;
     left: 20px;
@@ -80,69 +104,69 @@ body{
     padding: 0% 6%;
 }
 /* div for the "Safe sport for students to play year-round" section */
-#div3{
+#homepageDiv3{
     width: 45%;
     margin-left: 51%;
     margin-top: 25px;
 }
-#div3 p:nth-child(1){
+#homepageDiv3 p:nth-child(1){
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 600;
 }
-#div3 p:nth-child(2){
+#homepageDiv3 p:nth-child(2){
     color: #FFFFFF;
     font-size: 35px;
     font-weight: 200;
 }
-#div3 p:nth-child(3){
+#homepageDiv3 p:nth-child(3){
     color: #FFFFFF;
     font-size: 35px;
     font-weight: 200;
 }
 /* div for the "Improve students' hand-eye coordination" section */
-#div4{
+#homepageDiv4{
     width: 45%;
     margin-left: 2%;
     margin-top: -280px;
 }
-#div4 p:nth-child(1){
+#homepageDiv4 p:nth-child(1){
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 600;
 }
-#div4 p:nth-child(2){
+#homepageDiv4 p:nth-child(2){
     color: #FFFFFF;
     font-size: 35px;
     font-weight: 200;
 }
-#div4 p:nth-child(3){
+#homepageDiv4 p:nth-child(3){
     color: #FFFFFF;
     font-size: 35px;
     font-weight: 200;
 }
 /* div for the "Stay up-to-date with Spin and Learn by joining our newsletter" section */
-#div5{
+#homepageDiv5{
     width: 45%;
     margin-left: 51%;
     margin-top: -155px;
 }
-#div5 p:nth-child(1){
+#homepageDiv5 p:nth-child(1){
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 600;
 }
-#div5 form input:nth-child(1){
+#homepageDiv5 form input:nth-child(1){
     color: #FFFFFF;
     background: transparent;
     border: none;
     border-bottom: 5px solid #FFFFFF;
     width: 85%;
 }
-#div5 form input:nth-child(1):focus{
+#homepageDiv5 form input:nth-child(1):focus{
     outline: none;
 }
-#div5 form input:nth-child(2){
+#homepageDiv5 form input:nth-child(2){
     color: #FFFFFF;
     background-color: #3230A5;
     border: none;
@@ -150,26 +174,79 @@ body{
     width: 10%;
     font-weight: 600;
 }
-::placeholder{
+#homepageDiv5 form input::placeholder{
     color: #FFFFFF;
 }
-#homepageFooter{
+/* ABOVE FOR HOMEPAGE */
+
+/* BELOW FOR LOGINPAGE */
+#graySide{
     background-color: #BFBFBF;
-    width: 100%;
+    border: #BFBFBF 1px solid;
+    width: 16%;
+    float: left;
+    height: 1280px;
+    margin-bottom: -10%;
+}
+#redSide{
+    background-color: #A53030;
+    border: #A53030 1px solid;
+    width: 84%;
+    margin-left: 16%;
+    height: 1280px;
+    margin-bottom: -10%;
+}
+#loginDiv1{
+    text-align: center;
     margin-top: 50px;
 }
-#homepageFooter p:nth-child(1){
-    text-align: center;
+#loginDiv1 p{
     color: #FFFFFF;
-    font-size: 35px;
-    font-weight: 200;
-    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 45px;
 }
-#homepageFooter p:nth-child(2){
-    text-align: center;
+#loginDiv2{
+    margin-left: 4.5%;
+}
+#loginDiv2 form input{
+    margin-top: 50px;
+    width: 75%;
+}
+#loginDiv2 form input:nth-child(1), #loginDiv2 form input:nth-child(2){
+    font-weight: 300;
+    font-size: 35px;
+    color: #A53030;
+    background-color: #D9D9D9;
+    border: none;
+}
+#loginDiv2 form input:nth-child(1)::placeholder, #loginDiv2 form input:nth-child(2)::placeholder{
+    color: #A53030;
+}
+#loginDiv2 form input:nth-child(1):focus, #loginDiv2 form input:nth-child(2):focus, #loginSubmit{
+    outline: none;
+}
+#resetPass{
     color: #FFFFFF;
-    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    margin-left: 2.25%;
+    font-size: 30px;
     font-weight: 200;
-    margin: 0;
-    padding-top: 0;
 }
+#loginSubmit{
+    font-weight: 300;
+    font-size: 35px;
+    color: #BFBFBF;
+    background-color: #5A1919; 
+    border: none;
+    text-align: start;
+}
+#loginSubmit::placeholder{
+    color: #BFBFBF;
+}
+/* ABOVE FOR LOGINPAGE */
+
+/* BELOW FOR TEAMPAGE */
+
+/* ABOVE FOR TEAMPAGE */
+

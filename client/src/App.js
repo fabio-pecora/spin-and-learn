@@ -8,6 +8,7 @@ import PricingPage from "./pages/PricingPage";
 import TeamPage from "./pages/TeamPage";
 import SignUpPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
+import Footer from "./pages/Footer";
 
 function Navigation(props) {
   return (
@@ -65,20 +66,21 @@ function App() {
   return (
     <BrowserRouter>
       <Navigation />
-      {/* previously in first className below "container-xl text-left" */}
-      <div className="">
-        {/* previously in first className below "row" */}
-        <div className="justify-content-start">
-          <Routes>
-            <Route path="/homepage" element={<HomePage />} />
-            <Route path="/about-us" element={<AboutPage />} />
-            <Route path="/pricing" element={<PricingPage />} />
-            <Route path="/team" element={<TeamPage />} />
-            <Route path="/sign-up" element={<SignUpPage />} />
-            <Route path="/login" element={<LoginPage />} />
-          </Routes>
+        {/* previously in first className below "container-xl text-left" */}
+        <div className="">
+          {/* previously in first className below "row" */}
+          <div className="justify-content-start">
+            <Routes>
+              <Route path="/homepage" element={<HomePage />} />
+              <Route path="/about-us" element={<AboutPage />} />
+              <Route path="/pricing" element={<PricingPage />} />
+              <Route path="/team" element={<TeamPage />} />
+              <Route path="/sign-up" element={<SignUpPage />} />
+              <Route path="/login" element={<LoginPage />} />
+            </Routes>
+          </div>
         </div>
-      </div>
+      <Footer />
     </BrowserRouter>
   );
 }
