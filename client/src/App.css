@@ -273,3 +273,25 @@ body{
 }
 /* ABOVE FOR TEAMPAGE */
 
+/* About page starts here */
+#aboutpageDiv1{
+    position: relative;
+}
+/* div for the text over the image on homepage */
+#aboutpageDiv2{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    width: 30%;
+}
+#theaboutpageImg{
+    height: 55vh;
+    width: 100vw;
+    position: static;
+}
+#textOnImg{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 45px;
+    position: relative;
+} 
