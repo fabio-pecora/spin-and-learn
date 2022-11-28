@@ -1,17 +1,24 @@
 import React from 'react';
+import Mission from '../pages/Mission';
+import Blog from '../pages/Blog';
+import img2 from '../images/About1.jpg';
 
 function AboutUsPage(props) {
   return (
     <>
-      <div className="col text-center">
-        <h2 className="mb-3">About our project</h2>
-        <p className="mb-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          quidem adipisci nobis quia eum quaerat quos ducimus, deleniti
-          exercitationem animi itaque iste illo reiciendis vitae atque
-          necessitatibus voluptatum repellendus quisquam?
-        </p>
+    
+      <div id='aboutpageDiv1'>
+          <img src={img2} alt="table tennis table" id="theaboutpageImg"></img>
       </div>
+      <div id='aboutpageDiv2'>
+          <div id="textOnImg">Our Story!</div>                
+      </div>
+
+
+      <Mission/>
+      <Blog/>
+
+      
     </>
   );
 }
