@@ -11,10 +11,12 @@ function LoginPage(props) {
                 </div>
                 <div id="loginDiv2">
                     <form>
+                        <input type="text" id="loginFirstName" name="loginFirstName" placeholder='FIRST NAME'></input>
+                        <input type="text" id="loginLastName" name="loginLastName" placeholder='LAST NAME'></input>
                         <input type="text" id="loginEmail" name="loginEmail" placeholder='EMAIL'></input>
                         <input type="text" id="loginPassword" name="loginPassword" placeholder='PASSWORD'></input>
                         <button id="resetPass">[Reset Password]</button>
-                        <input type="submit" id="loginSubmit" value="SIGN IN"></input>
+                        <button id="loginSubmit">SIGN IN</button>
                     </form>
                 </div>
             </div>

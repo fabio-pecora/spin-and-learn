@@ -15,7 +15,7 @@ function SignUpPage(props) {
                         <input type="text" id="signUpLastName" name="signUpLastName" placeholder='LAST NAME'></input>
                         <input type="text" id="signUpEmail" name="signUpEmail" placeholder='EMAIL'></input>
                         <input type="text" id="signUpPassword" name="signUpPassword" placeholder='PASSWORD'></input>
-                        <input type="submit" id="signUpSubmit" value="SIGN UP"></input>
+                        <button id="signUpSubmit">SIGN UP</button>
                     </form>
                 </div>
             </div>
