@@ -229,7 +229,7 @@ body{
 
 
 
-/* Sign up page starts here */
+/* Sign up page and login page starts here */
 #graySide{
     background-color: #BFBFBF;
     border: #BFBFBF 1px solid;
@@ -291,27 +291,6 @@ body{
 #signUpSubmit::placeholder{
     color: #BFBFBF;
 }
-/* Sign up page ends here */
-
-
-
-/* Login page starts here */
-#graySide{
-    background-color: #BFBFBF;
-    border: #BFBFBF 1px solid;
-    width: 16%;
-    float: left;
-    height: 1280px;
-    margin-bottom: -10%;
-}
-#redSide{
-    background-color: #A53030;
-    border: #A53030 1px solid;
-    width: 84%;
-    margin-left: 16%;
-    height: 1280px;
-    margin-bottom: -10%;
-}
 #loginDiv1{
     text-align: center;
     margin-top: 50px;
@@ -365,4 +344,4 @@ body{
 #loginSubmit::placeholder{
     color: #BFBFBF;
 }
-/* Login page ends here */
+/* Sign up page and login page ends here */
