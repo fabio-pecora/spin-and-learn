@@ -366,3 +366,35 @@ body{
     color: #BFBFBF;
 }
 /* Login page ends here */
+
+
+
+
+/* Pricing page starts here (video section and text on video)*/
+#PricingpageDiv1{
+    position: relative;
+    max-width: 100%;
+    height: 50%;
+}
+
+#PricingpageImg{
+    height: 50%;
+    width: 100%;
+    position: static;
+    
+}
+
+#PricingpageDiv2{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    width: 30%;
+}
+
+#textOnImg{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 45px;
+    position: relative;
+} 
+/* Pricing page ends here */
