@@ -1,6 +1,6 @@
 /* BELOW FOR ALL PAGES */
 body{
-    background-color: #A53030;  
+    /* background-color: #A53030;   */
     /* height: 1280px;  */
 }
 #theFooter{
@@ -32,6 +32,7 @@ body{
     z-index: 1;
 }
 #theNav{
+    height: 100px;
     margin-top: 0%;
     background-color: #BFBFBF;
 }
@@ -278,16 +279,16 @@ body{
     position: relative;
 }
 /* div for the text over the image on homepage */
-#aboutpageDiv2{
-    position: absolute;
-    top: 180px;
-    left: 20px;
-    width: 30%;
-}
+/* #aboutpageDiv2{ */
+    /* position: absolute; */
+    /* top: 180px; */
+    /* left: 20px; */
+    /* width: 30%; */
+/* } */
 #theaboutpageImg{
-    height: 55vh;
     width: 100vw;
-    position: static;
+    height: 100vh;
+    
 }
 #textOnImg{
     color: #FFFFFF;
@@ -295,3 +296,54 @@ body{
     font-size: 45px;
     position: relative;
 } 
+
+
+.bg-hover:hover {
+    background: #5A1919 !important;
+}
+.color-hover:hover {
+    color: #5A1919 !important;
+}
+
+.main{
+    background: rgb(154, 199, 159);
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.OurTeam{
+    
+    background: rgba(12, 57, 171, 0.538);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .profiles{ */
+    /* width: 300%; */
+    /* height: 40%; */
+  
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center;  */
+/* } */
+
+/* .Teamprofile{ */
+   
+    /* width: 25% !important; */
+    /* height: 20%; */
+    /* background: rgba(218, 148, 148, 0.565); */
+    /* text-align: center; */
+/* } */
+
+
+/* #profile{ */
+    /* width: 200px; */
+    /* height: 200px; */
+    /* display: inline-block; */
+    /* position: relative; */
+    /* border-radius: 50%; */
+/* } */

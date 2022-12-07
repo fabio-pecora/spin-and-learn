@@ -1,6 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+
+
+// Styles
+import "./styles/header.scss"
+import "./styles/home-page.scss"
+import "./styles/footer.scss"
+import MainProvider from "./contexts/MainContext";
 
 // React 17 style loading of application
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+    <BrowserRouter>
+        <MainProvider>
+            <App />
+        </MainProvider>
+    </BrowserRouter>,
+    document.getElementById("root"));
