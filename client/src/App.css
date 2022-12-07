@@ -1,4 +1,4 @@
-/* BELOW FOR ALL PAGES */
+/* All pages starts here */
 body{
     /* background-color: #A53030;   */
     /* height: 1280px;  */
@@ -23,9 +23,11 @@ body{
     margin: 0;
     padding-top: 0;
 }
-/* ABOVE FOR ALL PAGES */
+/* All pages ends here */
 
-/* BELOW FOR HOMEPAGE */
+
+
+/* Home page starts here */
 #theDiv{
     position: sticky;
     top: 0;
@@ -40,8 +42,7 @@ body{
     height: 60px;
     width: 120px;
 }
-/* whiteTextBold is for "Spin and Learn" in navbar */
-.whiteTextBold{
+.whiteTextBold{/* whiteTextBold is for "Spin and Learn" in navbar */
     font-size: 30px;
     font-weight: 600;
     color: #FFFFFF;
@@ -49,8 +50,7 @@ body{
 .whiteTextBold:hover, .whiteTextBold:focus{
     color: #FFFFFF;
 }
-/* whiteText is for all other nav items (except sign up and login) in navbar */
-.whiteText{
+.whiteText{/* whiteText is for all other nav items (except sign up and login) in navbar */
     font-size: 20px;
     font-weight: 200;
     margin-top: 15px;
@@ -69,12 +69,10 @@ body{
     font-weight: 600;
     color: #A53030;
 }
-/* div for the image on homepage */
-#homepageDiv1{
+#homepageDiv1{/* div for the image on homepage */
     position: relative;
 }
-/* div for the text over the image on homepage */
-#homepageDiv2{
+#homepageDiv2{/* div for the text over the image on homepage */
     position: absolute;
     top: 180px;
     left: 20px;
@@ -104,8 +102,7 @@ body{
     font-size: 20px;
     padding: 0% 6%;
 }
-/* div for the "Safe sport for students to play year-round" section */
-#homepageDiv3{
+#homepageDiv3{/* div for the "Safe sport for students to play year-round" section */
     width: 45%;
     margin-left: 51%;
     margin-top: 25px;
@@ -125,8 +122,7 @@ body{
     font-size: 35px;
     font-weight: 200;
 }
-/* div for the "Improve students' hand-eye coordination" section */
-#homepageDiv4{
+#homepageDiv4{/* div for the "Improve students' hand-eye coordination" section */
     width: 45%;
     margin-left: 2%;
     margin-top: -280px;
@@ -146,8 +142,7 @@ body{
     font-size: 35px;
     font-weight: 200;
 }
-/* div for the "Stay up-to-date with Spin and Learn by joining our newsletter" section */
-#homepageDiv5{
+#homepageDiv5{/* div for the "Stay up-to-date with Spin and Learn by joining our newsletter" section */
     width: 45%;
     margin-left: 51%;
     margin-top: -155px;
@@ -178,9 +173,131 @@ body{
 #homepageDiv5 form input::placeholder{
     color: #FFFFFF;
 }
-/* ABOVE FOR HOMEPAGE */
+/* Home page ends here */
 
-/* BELOW FOR LOGINPAGE */
+
+
+/* About page starts here */
+#aboutpageDiv1{
+    position: relative;
+}
+#aboutpageDiv2{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    width: 30%;
+}
+#theaboutpageImg{
+    height: 55vh;
+    width: 100vw;
+    position: static;
+}
+#textOnImg{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 45px;
+    position: relative;
+} 
+/* About page ends here */
+
+
+
+/* Team page starts here */
+#teamDiv1{
+    width: 14.5%;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 45px;
+    text-decoration: underline;
+    margin: 3% 42.75%;
+}
+#teamDiv2{
+    width: 98%;
+    margin-left: 1%;
+    height: 50vh;
+}
+.developer p{
+    color: #FFFFFF;
+}
+.developer p:nth-child(1){
+    font-weight: 600;
+    font-size: 50px;
+}
+.developer p:nth-child(2){
+    font-weight: 200;
+    font-size: 20px;
+}
+/* Team page ends here */
+
+
+
+/* Sign up page starts here */
+#graySide{
+    background-color: #BFBFBF;
+    border: #BFBFBF 1px solid;
+    width: 16%;
+    float: left;
+    height: 1280px;
+    margin-bottom: -10%;
+}
+#redSide{
+    background-color: #A53030;
+    border: #A53030 1px solid;
+    width: 84%;
+    margin-left: 16%;
+    height: 1280px;
+    margin-bottom: -10%;
+}
+#signUpDiv1{
+    text-align: center;
+    margin-top: 50px;
+}
+#signUpDiv1 p{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 45px;
+}
+#signUpDiv2{
+    margin-left: 4.5%;
+}
+#signUpDiv2 form input{
+    margin-top: 50px;
+    width: 75%;
+}
+#signUpDiv2 form input:nth-child(1), #signUpDiv2 form input:nth-child(2), #signUpDiv2 form input:nth-child(3), #signUpDiv2 form input:nth-child(4){
+    font-weight: 300;
+    font-size: 35px;
+    color: #A53030;
+    background-color: #D9D9D9;
+    border: none;
+}
+#signUpDiv2 form input:nth-child(1)::placeholder, #signUpDiv2 form input:nth-child(2)::placeholder, #signUpDiv2 form input:nth-child(3)::placeholder, #signUpDiv2 form input:nth-child(4)::placeholder{
+    color: #A53030;
+}
+#signUpDiv2 form input:nth-child(1):focus, #signUpDiv2 form input:nth-child(2):focus, #signUpDiv2 form input:nth-child(3):focus, #signUpDiv2 form input:nth-child(4):focus, #signUpSubmit{
+    outline: none;
+}
+#signUpSubmit{
+    font-weight: 300;
+    font-size: 35px;
+    color: #BFBFBF;
+    background-color: #5A1919; 
+    border: none;
+    text-align: start;
+
+    margin-top: 50px;
+    width: 75%;
+    height: 40px;
+    text-align: center;
+}
+#signUpSubmit::placeholder{
+    color: #BFBFBF;
+}
+/* Sign up page ends here */
+
+
+
+/* Login page starts here */
 #graySide{
     background-color: #BFBFBF;
     border: #BFBFBF 1px solid;
@@ -213,17 +330,17 @@ body{
     margin-top: 50px;
     width: 75%;
 }
-#loginDiv2 form input:nth-child(1), #loginDiv2 form input:nth-child(2){
+#loginDiv2 form input:nth-child(1), #loginDiv2 form input:nth-child(2), #loginDiv2 form input:nth-child(3), #loginDiv2 form input:nth-child(4){
     font-weight: 300;
     font-size: 35px;
     color: #A53030;
     background-color: #D9D9D9;
     border: none;
 }
-#loginDiv2 form input:nth-child(1)::placeholder, #loginDiv2 form input:nth-child(2)::placeholder{
+#loginDiv2 form input:nth-child(1)::placeholder, #loginDiv2 form input:nth-child(2)::placeholder, #loginDiv2 form input:nth-child(3)::placeholder, #loginDiv2 form input:nth-child(4)::placeholder{
     color: #A53030;
 }
-#loginDiv2 form input:nth-child(1):focus, #loginDiv2 form input:nth-child(2):focus, #loginSubmit{
+#loginDiv2 form input:nth-child(1):focus, #loginDiv2 form input:nth-child(2):focus, #loginDiv2 form input:nth-child(3):focus, #loginDiv2 form input:nth-child(4):focus, #loginSubmit{
     outline: none;
 }
 #resetPass{
@@ -241,6 +358,11 @@ body{
     background-color: #5A1919; 
     border: none;
     text-align: start;
+
+    margin-top: 50px;
+    width: 75%;
+    height: 40px;
+    text-align: center;
 }
 #loginSubmit::placeholder{
     color: #BFBFBF;
@@ -311,39 +433,7 @@ body{
 
     display: flex;
     flex-direction: column;
-}
-
-.OurTeam{
-    
-    background: rgba(12, 57, 171, 0.538);
-    display: flex;
-    justify-content: center;
     align-items: center;
-
 }
 
-/* .profiles{ */
-    /* width: 300%; */
-    /* height: 40%; */
-  
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* align-items: center;  */
-/* } */
 
-/* .Teamprofile{ */
-   
-    /* width: 25% !important; */
-    /* height: 20%; */
-    /* background: rgba(218, 148, 148, 0.565); */
-    /* text-align: center; */
-/* } */
-
-
-/* #profile{ */
-    /* width: 200px; */
-    /* height: 200px; */
-    /* display: inline-block; */
-    /* position: relative; */
-    /* border-radius: 50%; */
-/* } */

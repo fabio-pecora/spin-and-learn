@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "ctp_user",
-    "password": "ctp_pass",
+    "username": "postgres",
+    "password": "Champion",
     "database": "ctp_appdb_development",
     "host": "127.0.0.1",
     "dialect": "postgres"

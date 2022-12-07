@@ -5,22 +5,20 @@ const { User } = db;
 
 
 router.get("/", (req, res) => {
-    
-    User.findAll({}).then((allUsers) => res.json(allUsers));
-    
-});
+    User.findAll({}).then((allUsers) => res.json(allUsers))
+})
 
 router.post("/", (req, res) => {
     let { content } = req.body;
   
-    User.create({ content })
-      .then((newPost) => {
+    User.create({
+        content: JSON.parse(content)
+    }).then((newPost) => {
         res.status(201).json(newPost);
-      })
-      .catch((err) => {
-        res.status(400).json(err);
-      });
-  });
+    }).catch((err) => {
+        res.status(400).json(err)
+    })
+  })
 
   router.get("/:id", (req, res) => {
     const { id } = req.params;
