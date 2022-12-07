@@ -1,6 +1,7 @@
 /* All pages starts here */
 body{
-    background-color: #A53030;  
+    /* background-color: #A53030;   */
+    /* height: 1280px;  */
 }
 #theFooter{
     background-color: #BFBFBF;
@@ -33,6 +34,7 @@ body{
     z-index: 1;
 }
 #theNav{
+    height: 100px;
     margin-top: 0%;
     background-color: #BFBFBF;
 }
@@ -365,4 +367,73 @@ body{
 #loginSubmit::placeholder{
     color: #BFBFBF;
 }
-/* Login page ends here */
+/* ABOVE FOR LOGINPAGE */
+
+/* BELOW FOR TEAMPAGE */
+#teamDiv1{
+    width: 14.5%;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 45px;
+    text-decoration: underline;
+    margin: 3% 42.75%;
+}
+#teamDiv2{
+    width: 98%;
+    margin-left: 1%;
+    height: 50vh;
+}
+.developer p{
+    color: #FFFFFF;
+}
+.developer p:nth-child(1){
+    font-weight: 600;
+    font-size: 50px;
+}
+.developer p:nth-child(2){
+    font-weight: 200;
+    font-size: 20px;
+}
+/* ABOVE FOR TEAMPAGE */
+
+/* About page starts here */
+#aboutpageDiv1{
+    position: relative;
+}
+/* div for the text over the image on homepage */
+/* #aboutpageDiv2{ */
+    /* position: absolute; */
+    /* top: 180px; */
+    /* left: 20px; */
+    /* width: 30%; */
+/* } */
+#theaboutpageImg{
+    width: 100vw;
+    height: 100vh;
+    
+}
+#textOnImg{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 45px;
+    position: relative;
+} 
+
+
+.bg-hover:hover {
+    background: #5A1919 !important;
+}
+.color-hover:hover {
+    color: #5A1919 !important;
+}
+
+.main{
+    background: rgb(154, 199, 159);
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

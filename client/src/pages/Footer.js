@@ -1,12 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-function Footer(props){
-    return(
-        <footer id="theFooter">
-            <p>Spin and Learn is dedicated to getting table tennis in NYC schools</p>
-            <p>© Spin and Learn 2022. All rights reserved.</p>
-        </footer>
-    );
+function Footer(props) {
+    return (
+        <div className="container">
+            <footer className="Footer">
+                <p>© <span>Spin and Learn</span> 2022. All rights reserved.</p>
+            </footer>
+        </div>
+    )
 }
 
-export default Footer;
+export default Footer
