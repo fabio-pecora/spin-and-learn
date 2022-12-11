@@ -11,6 +11,7 @@ import SignUpPage from "./pages/SignUpPage"
 import LoginPage from "./pages/LoginPage"
 import Footer from "./pages/Footer"
 import ProgramsModal from "./components/modals/Programs"
+import Student from "./pages/StudentsPage"
 
 const RedirectPage = () => {
     useEffect(() => {
@@ -36,6 +37,7 @@ const App = () => {
 				<Route path="/team" element={<TeamPage />} />
 				<Route path="/sign-up" element={<SignUpPage />} />
 				<Route path="/login" element={<LoginPage />} />
+				<Route path="/students" element={<Student/>}/>
 				<Route path="*" element={<RedirectPage />} />
 			</Routes>
 			<Footer />

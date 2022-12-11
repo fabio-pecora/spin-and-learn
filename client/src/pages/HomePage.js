@@ -1,7 +1,12 @@
 import React from 'react'
 import ai from '../images/ai.jpeg'
+import students from "./StudentsPage"
 
 const HomePage = (props) => {
+
+    const openStudentsPage = url =>{
+        window.open(url, "_self")
+    }
 
     return (
         <div className='HomePage container'>
@@ -19,7 +24,9 @@ const HomePage = (props) => {
                 <div className='buttons-container'>
                     <h4>Explore Our Solutions to Your Schools!</h4>
                     <div>
-                        <button className='bg-hover'>Students</button>
+                        <button onClick={() => openStudentsPage('/students')} className='bg-hover'>
+                            Students
+                        </button>
                         <button className='bg-hover'>Leaders</button>
                         <button className='bg-hover'>Teachers</button>
                     </div>
