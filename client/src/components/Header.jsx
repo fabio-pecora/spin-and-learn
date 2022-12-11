@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { MainContext } from '../contexts/MainContext';
 import logo from '../images/logoImg.png';
@@ -6,6 +6,16 @@ import logo from '../images/logoImg.png';
 
 const Header = () => {
     const { open, setOpen } = useContext(MainContext)
+    const userId = localStorage.getItem("userId")
+
+    useEffect(() => {
+        console.log(userId);
+    },[userId])
+
+    const handleOnClick = () => {
+        localStorage.clear("userId")
+        window.location.href = "/sign-up"
+    }
 
     return (
         <div className="Header container">
@@ -30,6 +40,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 pl-3">
+                    {userId && 
                         <li className="nav-item">
                             <Link className="navbar-brand color-hover whiteTextBold">
                                 <span onClick={() => setOpen(true)}>
@@ -37,6 +48,7 @@ const Header = () => {
                                 </span>
                             </Link>
                         </li>
+                        }
                         <li className="nav-item">
                             <Link className="navbar-brand color-hover whiteTextBold" to="/">
                                 Events
@@ -47,11 +59,14 @@ const Header = () => {
                                 About us
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        {!userId && <li className="nav-item">
                             <Link className="navbar-brand color-hover whiteTextBold" to="/sign-up">
                                 Sign up
                             </Link>
-                        </li>
+                        </li>}
+                           {userId && <span onClick={handleOnClick} style={{color: "#a53030"}} className="color-hover">
+                                Log Out
+                            </span>}
                     </ul>
                 </div>
             </nav>

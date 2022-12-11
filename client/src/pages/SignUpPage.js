@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
+import axios from "axios"
 
 
 
@@ -9,28 +10,26 @@ const SignUpPage = (props) => {
     const [Password, setPassword] = useState("")
 
 
-    const onSubmit = (event) => {
+    const onSubmit = async (event) => {
         console.log("EVENT", event.target)
         event.preventDefault()
-    
-        fetch('http://localhost:8080/api/users', {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                content: {
-                    FirstName, 
-                    LastName, 
-                    Email, 
-                    Password
-                }
-            })
+
+       await axios.post("http://localhost:8080/api/users", {
+            FirstName, 
+            LastName, 
+            Email, 
+            Password
+        }).then(res => {
+            if (!res.data.error) {
+                localStorage.setItem("userId", res.data.user.id)
+                window.location.href = "/"
+            }
+            console.log(res.data)
+        }).catch(err=> {
+            console.log('====================================')
+            console.log(err.toString())
+            console.log('====================================')
         })
-        .then((response) => response.json()).then((res) => {
-            console.log(res)
-        })
-        .catch((error) => console.error('Error:', error))
     }
 
     const handleOnchnage = (e) => {
@@ -50,6 +49,12 @@ const SignUpPage = (props) => {
         }
     }
 
+    useEffect(() => {
+        if (localStorage.getItem("userId")) {
+            window.location.href = "/"
+        }
+    },[])
+
     return (
         <div className='SignUpPage container'>
             <div className="redSide">
@@ -59,8 +64,10 @@ const SignUpPage = (props) => {
                <form onSubmit={onSubmit}>
                    <input onChange={handleOnchnage} type="text" id="FirstName" name="signUpFirstName" placeholder='First Name'/>
                    <input onChange={handleOnchnage} type="text" id="LastName" name="signUpLastName" placeholder='Last Name'/>
-                   <input onChange={handleOnchnage} type="text" id="Email" name="signUpEmail" placeholder='Email'/>
-                   <input onChange={handleOnchnage} type="text" id="Password" name="signUpPassword" placeholder='Password'/>
+                   <input onChange={handleOnchnage} type="email" id="Email" name="signUpEmail" placeholder='Email'/>
+                   <input onChange={handleOnchnage} type="password" id="Password" name="signUpPassword" placeholder='Password'/>
+                   <a href='/login' style={{textAlign: "end", width: "100%", paddingRight: 30}}>Login</a>
+
                    <button>Sign Up</button>
                 </form>
             </div>

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Routes, Route } from "react-router-dom"
 import "./App.css"
 
@@ -12,7 +12,19 @@ import LoginPage from "./pages/LoginPage"
 import Footer from "./pages/Footer"
 import ProgramsModal from "./components/modals/Programs"
 
+const RedirectPage = () => {
+    useEffect(() => {
+        if (localStorage.getItem("userId")) {
+            window.location.href = "/"
+        }
+    },[])
 
+    return (
+        <></>
+    )
+}
+
+        
 const App = () => {
 	return (
 		<div className="App">
@@ -24,11 +36,11 @@ const App = () => {
 				<Route path="/team" element={<TeamPage />} />
 				<Route path="/sign-up" element={<SignUpPage />} />
 				<Route path="/login" element={<LoginPage />} />
+				<Route path="*" element={<RedirectPage />} />
 			</Routes>
 			<Footer />
 			<ProgramsModal/>
 		</div>
-
 	)
 }
 
