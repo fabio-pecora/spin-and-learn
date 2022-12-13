@@ -1,10 +1,14 @@
 import React from 'react'
 import ai from '../images/ai.jpeg'
 import students from "./StudentsPage"
+import teachers from "./TeachersPage"
 
 const HomePage = (props) => {
 
-    const openStudentsPage = url =>{
+    const openStudentsPage = url => {
+        window.open(url, "_self")
+    }
+    const openTeachersPage = url => {
         window.open(url, "_self")
     }
 
@@ -27,8 +31,12 @@ const HomePage = (props) => {
                         <button onClick={() => openStudentsPage('/students')} className='bg-hover'>
                             Students
                         </button>
-                        <button className='bg-hover'>Leaders</button>
-                        <button className='bg-hover'>Teachers</button>
+                        <button onClick={() => openTeachersPage('/teachers')} className='bg-hover'>
+                            Leaders
+                        </button>
+                        <button className='bg-hover'>
+                            Teachers
+                        </button>
                     </div>
                 </div>
             </div>
