@@ -1,7 +1,5 @@
 import React from 'react'
 import ai from '../images/ai.jpeg'
-import students from "./StudentsPage"
-import teachers from "./TeachersPage"
 
 const HomePage = (props) => {
 
@@ -9,6 +7,9 @@ const HomePage = (props) => {
         window.open(url, "_self")
     }
     const openTeachersPage = url => {
+        window.open(url, "_self")
+    }
+    const openLeadersPage = url => {
         window.open(url, "_self")
     }
 
@@ -32,10 +33,10 @@ const HomePage = (props) => {
                             Students
                         </button>
                         <button onClick={() => openTeachersPage('/teachers')} className='bg-hover'>
-                            Leaders
-                        </button>
-                        <button className='bg-hover'>
                             Teachers
+                        </button>
+                        <button onClick={() => openLeadersPage('/leaders')} className='bg-hover'>
+                            Leaders
                         </button>
                     </div>
                 </div>

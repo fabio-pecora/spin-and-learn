@@ -13,6 +13,9 @@ import Footer from "./pages/Footer"
 import ProgramsModal from "./components/modals/Programs"
 import Students from "./pages/StudentsPage"
 import Teachers from "./pages/TeachersPage"
+import Leaders from "./pages/LeadersPage"
+import Events from "./pages/Mission"
+
 
 const RedirectPage = () => {
     useEffect(() => {
@@ -40,6 +43,8 @@ const App = () => {
 				<Route path="/login" element={<LoginPage />} />
 				<Route path="/students" element={<Students/>}/>
 				<Route path="/teachers" element={<Teachers/>}/>
+				<Route path="/leaders" element={<Leaders/>}/>
+				<Route path="/events" element={<Events/>}/>
 				<Route path="*" element={<RedirectPage />} />
 			</Routes>
 			<Footer />

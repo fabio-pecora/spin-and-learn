@@ -8,7 +8,7 @@ import './MissionStyle.css'
 const Mission =() =>{
     return(
         <div className="Mission">
-            <h1>Spin and Learn Mission</h1>
+            <h1 style={{color: "black"}}>Spin and Learn Mission</h1>
             <p>We aim to make Table Tennis accessible to everyone. Starting in NYC, we offer communities safe spaces to play that urban centers desperately lack.
           Our mission is to activate neighborhoods by using technology and an easy, seamless and affordable customer experience. In doing so, the Spin and Learn-network aims 
           to elevate the sport of Table Tennis, which has been historically overlooked in the United States.

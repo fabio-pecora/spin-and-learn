@@ -21,14 +21,14 @@ function AboutUsPage(props) {
 			email: "yortizm000@citymail.cuny.edu"
 		},
 		{
-			image: "https://media.discordapp.net/attachments/1029905103693557790/1029905777793716274/IMG_20220625_212456_479.jpg?width=511&height=511",
+			image: "https://media.discordapp.net/attachments/1017213901533888596/1052415581430763620/image.png",
 			name: "Fabio Pecora",
 			college: "CUNY - College of Staten Island",
 			role: "Back-End Developer",
 			email: "fabiopecora01@gmail.com"
 		},
 		{
-			image: "https://media.discordapp.net/attachments/1029905103693557790/1029905777793716274/IMG_20220625_212456_479.jpg?width=511&height=511",
+			image: "https://media.discordapp.net/attachments/1052424931490676777/1052432676109430874/photo-1.jpg?width=940&height=1353",
 			name: "Ahmai Chaney-Smith",
 			college: "CUNY - Brooklyn College",
 			role: "Front-End Developer",

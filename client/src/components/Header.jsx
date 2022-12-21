@@ -50,7 +50,7 @@ const Header = () => {
                         </li>
                         }
                         <li className="nav-item">
-                            <Link className="navbar-brand color-hover whiteTextBold" to="/">
+                            <Link className="navbar-brand color-hover whiteTextBold" to="/events">
                                 Events
                             </Link>
                         </li>
